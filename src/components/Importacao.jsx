@@ -49,14 +49,14 @@ export default function Importacao() {
         {/* CABEÇALHO DA APLICAÇÃO */}
         <header className="header">
           <div className="brand">
-            <img src="/logonexus.png" alt="Nexus Logo" className="logo" onError={(e) => { e.target.style.display = 'none'; }} />
-            <div>
+            <div className="logo-title-row">
+              <img src="/logonexus.png" alt="Nexus Logo" className="logo" onError={(e) => { e.target.style.display = 'none'; }} />
               <h1>NEXUS</h1>
-              <span className="badge-tag">Automação Multi-Lista & Sincronização</span>
             </div>
+            <span className="badge-tag">Automação Multi-Lista & Sincronização</span>
           </div>
           <p className="subtitle">
-            Cruzamento de dados de até 2 listas CSV/TXT com a base do Excel (XLSX) e sincronização simultânea no PostgreSQL e Google Sheets
+            Cruzamento inteligente de listas e sincronização simultânea com PostgreSQL e Google Sheets.
           </p>
         </header>
 
