@@ -1,6 +1,6 @@
 # 🎨 Nexus Frontend — Dashboard de Automação & Sincronização
 
-Interface web moderna em **React** para o sistema **Nexus**. O frontend permite a seleção e upload de até dois arquivos de lista (CSV/TXT) e da base de dados do Excel (XLSX), realizando a chamada à API do backend para cruzamento e exibindo métricas estatísticas detalhadas de sincronização em tempo real.
+Interface web em **React** para o fluxo unificado do SEST. O frontend recebe a planilha semanal Excel, solicita a coleta automática dos dois REPs e exibe o resultado da sincronização do PostgreSQL e do Google Sheets.
 
 ---
 
@@ -45,7 +45,7 @@ O arquivo `src/services/api.js` está configurado por padrão para conectar ao b
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3333'
+  baseURL: 'http://localhost:3333/api'
 });
 
 export default api;
@@ -64,7 +64,7 @@ Se o seu backend estiver rodando em outra URL ou porta em produção, altere o v
 
 2. **Iniciar a aplicação em modo de desenvolvimento:**
    ```bash
-   npm start
+   npm run dev
    ```
 
 3. A aplicação abrirá automaticamente no seu navegador em `http://localhost:3000`.

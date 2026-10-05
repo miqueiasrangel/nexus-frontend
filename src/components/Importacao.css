@@ -242,6 +242,39 @@ body {
   box-shadow: none;
 }
 
+.execution-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 4px 0 20px;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.execution-option input {
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  accent-color: #38bdf8;
+}
+
+.execution-option span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.execution-option strong {
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.execution-option small {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 /* BOTÃO DE ENVIO */
 .submit-btn {
   width: 100%;
